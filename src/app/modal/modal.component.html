@@ -1,0 +1,20 @@
+<div class="modal-overlay" (click)="closeModal($event)">
+  <div class="container">
+    <div class="modal">
+      <form class="form" [formGroup]="modalForm" (ngSubmit)="onSubmit()">
+        <input
+          type="text"
+          placeholder="Description"
+          class="form__description"
+          formControlName="desc"
+        />
+        <button type="submit">Update</button>
+      </form>
+      <div class="modal__close" (click)="closeModal($event)">
+        <span>
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

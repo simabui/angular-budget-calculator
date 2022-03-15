@@ -1,0 +1,14 @@
+@import "normalize";
+@import "base";
+
+header {
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 137, 197, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+}

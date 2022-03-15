@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="form">
+    <form [formGroup]="budgetForm" (ngSubmit)="onSubmit()">
+      <input
+        type="number"
+        placeholder="Amount"
+        class="form__amount"
+        formControlName="amount"
+      />
+      <input
+        type="text"
+        placeholder="Description"
+        class="form__description"
+        formControlName="desc"
+      />
+      <button type="submit">Add</button>
+    </form>
+  </div>
+</div>

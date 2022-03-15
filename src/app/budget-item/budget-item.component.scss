@@ -1,0 +1,66 @@
+.item {
+  background: #f5f4f6;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  position: relative;
+
+  &__desc {
+    flex-basis: 70%;
+    font-weight: 700;
+
+    &__income {
+      color: #03d788;
+    }
+
+    &__expense {
+      color: #f70000;
+    }
+  }
+
+  &__amount {
+    text-align: center;
+    flex-basis: 20%;
+    padding: 8px;
+    font-weight: 700;
+
+    &__income {
+      background: #b7f0cc;
+      color: #03d788;
+    }
+
+    &__expense {
+      background: #ffded5;
+      color: #f70000;
+    }
+  }
+
+  &__delete {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    transform: scale(0);
+    transition: transform 0.2s linear;
+
+    span {
+      display: block;
+      border-radius: 50%;
+      background: #575656;
+      color: #f70000;
+      width: 27px;
+      height: 27px;
+      text-align: center;
+      line-height: 1.7;
+    }
+  }
+
+  &:hover {
+    .item__delete {
+      transform: scale(1);
+    }
+  }
+}

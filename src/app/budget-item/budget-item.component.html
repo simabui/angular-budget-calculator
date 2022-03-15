@@ -1,0 +1,11 @@
+<div class="item" (click)="onEditItem()">
+  <p class="item__desc" [class]="'item__desc__' + item.type">{{ item.desc }}</p>
+  <div class="item__amount" [class]="'item__amount__' + item.type">
+    {{ item.amount }}
+  </div>
+  <div class="item__delete" (click)="removeItem()">
+    <span>
+      <i class="fas fa-times"></i>
+    </span>
+  </div>
+</div>

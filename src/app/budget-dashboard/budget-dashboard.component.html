@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="dashboard">
+    <div class="dashboard__income">
+      <h2 class="dashboard__income__title">INCOME</h2>
+      <div [@listAnimation] *ngFor="let income of getIncomeBudget">
+        <app-budget-item [item]="income"></app-budget-item>
+      </div>
+    </div>
+    <div class="dashboard__expense">
+      <h2 class="dashboard__expense__title">EXPENSE</h2>
+      <div [@listAnimation] *ngFor="let expense of getExpenseBudget">
+        <app-budget-item [item]="expense"></app-budget-item>
+      </div>
+    </div>
+  </div>
+</div>
